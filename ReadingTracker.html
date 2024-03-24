@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RijkdomRace</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <section class="signature">
+            <img src="./images/handtekening.png" alt="mijn handtekening">
+        </section>
+        <section class="linkjes">
+            <a href="index.html">
+                Home
+            </a>
+            <a id="bekijk" href="#bekijk">
+                Mijn werk
+            </a>
+            <a href="Mezelf.html">
+                Over mij
+            </a>
+        </section>
+    </nav>
+    <header class="headerCase">
+        <section class="titelImg">
+            <div class="titel">
+                <h1>ReadingTracker</h1>
+                <p>SCHOOLPROJECT</p>
+            </div>
+            <div class="readingInfoImg">
+                <img src="./images/reading mockup/homescreen portrait.png" alt="">
+                <img src="./images/reading mockup/overzicht portrait.png" alt="">
+                <img src="./images/reading mockup/km lezen portrait.png" alt="">
+            </div>
+        </section>
+        <section class="info">
+            <h3>Hoe kan je verzamelde data op een leuke en duidelijke manier weergeven voor je gebruiker en voor je bedrijf? Daar ding het bij dit vak 'Content Delivery' over. Ontwerpen is niet alleen mooie schermen maken, het is ook belangrijk dat je evt. data op zo'n manier kan vorm geven dat er eigenlijk geen uitleg nodig voor hoeft te zijn.</h3>
+                <section class="rijtje">
+                <h4>OPDRACHTGEVER</h4>
+                <p>CMD Amsterdam</p>
+                <h4>TOOLS</h4>
+                <p>Adobe XD</p>
+                <h4>DESIGN CHALLENGE</h4>
+                <p>Op welke manier kan je de verzamelde data van iemand die een boek leest op een overzichtelijke en
+                    creatieve manier laten zien, zodat de gebruiker dit kan bijhouden?</p>
+
+            </section>
+        </section>
+    </header>
+    <main>
+
+        <article class="userJourney">
+            <h2>Conceptueel model</h2>
+            <img src="./images/ReadingTracker/conceptueelModel.jpg" alt="">
+            <hr>
+        </article>
+
+        <article class="userJourney">
+            <h2>Doelgroepen, doelen en devices</h2>
+
+            <table>
+                <tr>
+                    <th>Doelgroep</th>
+                    <th>Doelen (actie, wijsheid)</th>
+                    <th>Device</th>
+                </tr>
+                <tr>
+                    <td>Mensen die boeken lezen,</td>
+                    <td>Gelezen bladzijden bij houden <br>
+                        Tijd die gelezen wordt (per boek) bij houden,<br>
+                        Dagelijkse leesdoel behalen,<br>
+                        Bekijken waar hun meest gelezen plekken zijn,<br>
+                        Gelezen boeken bijhouden</td>
+                    <td>Boeken<br>
+                        Mobiel (app)<br>
+                        Boekenlegger</td>
+                </tr>
+                <tr>
+                    <td>Bedrijf van de boekenlegger,</td>
+                    <td>Aantal gebruikers kunnen bekijken <br>
+                        Bekijken waar gelezen wordt (welke provincie het meest),<br>
+                        Totale tijd met product (gelezen tijd) van gebruikers bekijken,<br>
+                        Informatie vergaren over leespatronen van de gebruikers
+                    </td>
+                    <td>Computer <br>
+                        Mobiel<br>
+                        Tablet</td>
+                </tr>
+            </table>
+
+            <hr>
+        </article>
+
+        <article class="userJourney">
+            <h2>Data-tabellen</h2>
+            <table>
+                <tr>
+                    <th>Datum</th>
+                    <th>Begin moment</th>
+                    <th>Eind moment</th>
+                    <th>Pagina-nummer</th>
+                    <th>BOek</th>
+                    <th>Locatie</th>
+                </tr>
+                <tr>
+                    <td>23-08-2023</td>
+                    <td>21:38</td>
+                    <td></td>
+                    <td>116</td>
+                    <td>Funny you should ask</td>
+                    <td>Slaapkamer</td>
+                </tr>
+                <tr>
+                    <td>23-08-2023</td>
+                    <td></td>
+                    <td>21:38</td>
+                    <td>205</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>01-09-2023</td>
+                    <td>10:01</td>
+                    <td></td>
+                    <td>31</td>
+                    <td>Dear Evan Hansen</td>
+                    <td>Woonkamer</td>
+                </tr>
+                <tr>
+                    <td>01-09-2023</td>
+                    <td></td>
+                    <td>10:30</td>
+                    <td>67</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>01-09-2023</td>
+                    <td>22:14</td>
+                    <td></td>
+                    <td>205</td>
+                    <td>Funny you should ask</td>
+                    <td>Slaapkamer</td>
+                </tr>
+                <tr>
+                    <td>01-09-2023</td>
+                    <td></td>
+                    <td>23:08</td>
+                    <td>298</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>06-09-2023</td>
+                    <td>15:37</td>
+                    <td></td>
+                    <td>67</td>
+                    <td>Dear Evan Hansen</td>
+                    <td>Trein</td>
+                </tr>
+                <tr>
+                    <td>06-09-2023</td>
+                    <td></td>
+                    <td>15:52</td>
+                    <td>92</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>Eind moment</td>
+                    <td>-</td>
+                    <td>Begin moment</td>
+                    <td>=</td>
+                    <td>Gelezen tijd</td>
+                </tr>
+                <tr>
+                    <td>Pagina-nummer</td>
+                    <td>-</td>
+                    <td>Pagina-nummer</td>
+                    <td>=</td>
+                    <td>Gelezen bladzijden</td>
+                </tr>
+                <tr>
+                    <td>Gelezen tijd</td>
+                    <td>*</td>
+                    <td>Locatie</td>
+                    <td>=</td>
+                    <td>Gelezen tijd op locatie</td>
+                </tr>
+                <tr>
+                    <td>Gelezen bladzijden</td>
+                    <td>/</td>
+                    <td>Aantal pagina's</td>
+                    <td>=</td>
+                    <td>Vooruitgang leesdoel</td>
+                </tr>
+                <tr>
+                    <td>Lees doel</td>
+                    <td>-</td>
+                    <td>Gelezen bladzijden</td>
+                    <td>=</td>
+                    <td>Vooruitgang leesdoel</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Gelezen bladzijden</td>
+                    <td>=</td>
+                    <td>Aantal gelezen KM</td>
+                </tr>
+                <tr>
+                    <td>Gelezen bladzijden</td>
+                    <td>/</td>
+                    <td>40.000 (1 rondje om de wereld)</td>
+                    <td>=</td>
+                    <td>Vooruitgang rondje om de wereld</td>
+                </tr>
+            </table>
+            <hr>
+        </article>
+
+        <article class="userJourney">
+            <h2>Information design</h2>
+            <p>Hoe kan je op een creatieve manier de data tonen?</p>
+            <img src="./images/ReadingTracker/dataVisualisatie.jpg" alt="">
+            <hr>
+        </article>
+
+        <article class="wireframe">
+            <h2>Schermen</h2>
+            <div class="readingWireImg">
+                <img src="./images/reading mockup/homescreen portrait.png" alt="">
+                <img src="./images/reading mockup/overzicht portrait.png" alt="">
+                <img src="./images/reading mockup/locaties.png" alt="">
+                <img src="./images/reading mockup/huidigeBoeken.png" alt="">
+                <img src="./images/reading mockup/boekInfo.png" alt="">
+                <img src="./images/reading mockup/boekInfo 14.52.06.png" alt="">
+                <img src="./images/reading mockup/gelezenBoeken.png" alt="">
+                <img src="./images/reading mockup/km lezen portrait.png" alt="">
+            </div>
+            <div class="readingWireImgII">
+                <img src="./images/reading mockup/Web 1920 – 1-front.png" alt="">
+                <img src="./images/reading mockup/Web 1920 – 3-front.png" alt="">
+            </div>
+            <hr>
+        </article>
+
+        <article class="details">
+            <h2>D.E.T.A.I.L.S</h2>
+            <div class="detailLetterII">
+                <section>
+                    <h3>Device</h3>
+                    <p>Door naar beneden te scrollen is er meer ruimte voor het tonen van data in de mobiele app. Extra
+                        info verschijnt pas als er op geklikt wordt om ruimte te besparen.
+                    </p>
+                </section>
+                <section>
+                    <h3>Environment</h3>
+                    <p>De app kan overal gebruikt worden. Er is geen specifieke locatie voor nodig. Buiten, binnen,
+                        onderweg; alles kan</p>
+                </section>
+                <section>
+                    <h3>Time</h3>
+                    <p>Je kan altijd kijken hoeveel je gelezen hebt. De app is gemaakt om op een moment kort je data te
+                        bekijken. Niet om uren in de app te spenderen. </p>
+                </section>
+                <section>
+                    <h3>Activity</h3>
+                    <p>Het hoofddoel van de app is om snel op elk moment van de dag te kijken hoe ver je bent met je
+                        leesdoel: Even snel kijken hoe ver je op weg bent voor je doel. Uitgebreidere (extra) info zit
+                        dieper in de app, hiervoor ben je langer in de app bezig
+                    </p>
+                </section>
+                <section>
+                    <h3>Location</h3>
+                    <p>Net zoals lezen, kan het checken van de app overal. Er is geen locatie aan verbonden. Blijf
+                        alleen wel altijd veilig als je buiten huis op je mobiel zit.
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <p>Het is nu niet in de app verwerkt omdat het niet super belangrijk is om de case te laten
+                        functioneren, maar het zou mogelijk zijn dat gebruikers hun data in de app met elkaar kunnen
+                        delen. Dan kunnen zij van elkaar zien wat en hoe veel ze lezen.
+                </section>
+            </div>
+        </article>
+        <hr>
+
+        <article class="userJourney">
+            <h2>Samenhang schermen</h2>
+            <p>Wat doorstaat de gebruiker tijdens het spel?</p>
+            <img src="./images/ReadingTracker/samenhanging.jpg" alt="">
+            <hr>
+        </article>
+
+        <article class="userScenario">
+            <h2>Visuele ontwerp keuzes</h2>
+            <div class="fases">
+                <section>
+                    <p>Ik heb gekozen voor een licht kleuren gebruik omdat ik lezen associeer met rust. Hele felle en
+                        drukke kleuren zouden dit gevoel tegenwerken.
+                    </p>
+                    <p>Door de zichtbare data (tabellen) als enige een kleur te geven vallen deze op. De secundaire data
+                        is in het grijs Dit contrasteert tegen de witte achtergrond. Het valt dus wel op, maar is minder
+                        belangrijk dan de data in het groen.
+                    </p>
+                    <p>Door onderscheidt in grootte en kleur in de tekst die op de pagina's te zien is, is er een
+                        hiërarchie aanwezig. Grotere en donkere tekst trekken meer de aandacht dan de kleinere lichtere
+                        tekst. Deze lichte tekst is vaak voor extra ondersteuning van de grote donkere.
+                    </p>
+                </section>
+            </div>
+            <hr>
+        </article>
+
+        <article class="drieC">
+            <h2>Content operations</h2>
+            <div class="contentOp">
+                <section>
+                    <h3>Meten van succes</h3>
+                    <p>Succes in deze case is de vooruitgang die geboekt wordt wat betreft het lezen van een boek.
+                    </p>
+                    <p>
+                        Wanneer een gebruiker een bladzijde leest komt de gebruiker dichterbij het behalen van hun
+                        leesdoel = succes.
+                    </p>
+                    <p>
+                        Dit succes wordt gemeten in aantal gelezen bladzijden. Hoe veel bladzijden er worden gelezen
+                        wordt gemeten door de boekenlegger die in het boek zit. Deze staat in verbindingen met een app
+                        op de telefoon van de gebruiker zodat hij of zij hun successen (vooruitgang) kunnen bekijken.
+                    </p>
+                    <p>Wat ook onder het meten van succes gesteld kan worden is de manier waarop gemeten wordt door het
+                        bedrijf dat de app en de boekenlegger (actief) gebruikt worden.
+                        Dit wordt gemeten door bij te houden hoeveel mensen de app gedownload hebben en deze gebruiken.
+                        Vervolgens kan er gekeken worden naar de data die door de gebruiker verzameld wordt, hoeveel
+                        boeken worden er gelezen, welke boeken en hoe lang. Wanneer er geen (heftige) constante daling
+                        zit in de hoeveelheden in de data die gemeten wordt zou je kunnen stellen dat de app een succes
+                        is
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Eigenaar van data</h3>
+                    <p>De eigenaar van de data is de gebruiker zelf. Echter heeft het bedrijf dat de app en de
+                        boekenlegger in beheer heeft ook inzicht in deze data, aangezien zij de hele reden zijn dat de
+                        data bestaat.
+                    </p>
+                    <p>
+                        Wat ook een mogelijkheid zou kunnen zijn is dat de gebruiker hun data kan delen met vrienden die
+                        ook de app gebruiken. Op dat moment zou je kunnen stellen dat zij niet meer de "enige" (als je
+                        het bedrijf niet meerekent) eigenaar zijn van de data. Aangezien het nu ook in handen is van een
+                        andere gebruiker.
+                    </p>
+                    <p>
+                        Het delen van data met andere gebruikers moet een keuze zijn die de gebruiker / eigenaar van de
+                        data zelf moet kunnen maken. Het moet niet iets vanzelfsprekends zijn.
+                    </p>
+                    <p>
+                        Het bedrijf zou ook niet de rechten mogen hebben om deze data te delen zonder de toestemming van
+                        de gebruiker. (Zie Privacy)</p>
+                </section>
+
+                <section>
+                    <h3>Privacy</h3>
+                    <p>Het bedrijf van de app en boekenlegger is in bezit van de data.
+                        Ze zouden deze data kunnen verkopen / delen met uitgeverijen zodat die inzicht krijgen in welke
+                        boeken veel en snel gelezen worden en op deze manier de gebruiker van de boeken app
+                        persoonlijkere aanbiedingen kunnen aanbieden.
+                    </p>
+                    <p>
+                        Omdat er ook persoonlijke data tussen zit ; locaties, zou het niet vanzelf sprekend moeten zijn
+                        dat het bedrijf dit kan doorverkopen.
+                    </p>
+                    <p>
+                        De gebruiker zou zelf moeten kunnen kiezen of zij het toestaan om hun data via het bedrijf te
+                        delen met andere bedrijven. </p>
+                    <p>
+                        De gebruiker moet, mocht hij of zij dat willen, de enige zijn die wat kan doen </p>
+                    <br>
+                    <h3>Actueel houden van content</h3>
+                    <p>De content die getoond wordt is de '"live" data die verzameld wordt door de boekenlegger.
+                    </p>
+                    <p>
+                        De content is altijd actueel omdat deze in directe verbinding staat met het apparaat dat de
+                        data
+                        verzameld.
+                        De content wordt namelijk constant geüpdatet.
+                    </p>
+                </section>
+                <section>
+                    <h3>Ethiek</h3>
+                    <p>In deze case kom niet heel veel ethiek naar voren.
+                    </p>
+                    <p>
+                        Boeken lezen heeft niks te maken met wat mensen goed of fout vinden.
+                    </p>
+                    <p>
+                        Alleen de inhoud van de boeken zouden in conflict kunnen staan met mensen hun ethiek, maar
+                        niemand hoeft te weten wat voor boeken door gebruiker gelezen worden als de gebruiker er
+                        voor
+                        kiest om deze informatie niet te delen.
+                    </p>
+                    <p>
+                        Hetzelfde geld voor het delen van data, dat zou als niet ethisch gezien kunnen worden als
+                        het
+                        zonder toestemming gebeurd. Daarom moet er de mogelijkheid zijn om dit te beheren.</p>
+                    <p>
+                        De normen en waarden van mensen worden niet geconfronteerd in deze case omdat er bij het
+                        bijhouden van gelezen bladzijden amper normen en waarden kunnen zijn.</p>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <section class="footerText">
+            <div>
+                <img src="./images/handtekening.png" alt="mijn handtekening">
+            </div>
+            <div>
+                <div class="contactImg">
+                    <a href="#" id="mail">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path style="fill:#FFFEF9" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20 4C21.6569 4 23 5.34315 23 7V17C23 18.6569 21.6569 20 20 20H4C2.34315 20 1 18.6569 1 17V7C1 5.34315 2.34315 4 4 4H20ZM19.2529 6H4.74718L11.3804 11.2367C11.7437 11.5236 12.2563 11.5236 12.6197 11.2367L19.2529 6ZM3 7.1688V17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V7.16882L13.8589 12.8065C12.769 13.667 11.231 13.667 10.1411 12.8065L3 7.1688Z"
+                                    fill="#0F0F0F"></path>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="#" id="insta">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M16.65 7.2H16.66M8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20ZM15.75 12C15.75 14.0711 14.0711 15.75 12 15.75C9.92893 15.75 8.25 14.0711 8.25 12C8.25 9.92893 9.92893 8.25 12 8.25C14.0711 8.25 15.75 9.92893 15.75 12Z"
+                                    stroke="#FFFEF9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="#" id="linkedIn">
+                        <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title>linkedin [#161]</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs> </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)"
+                                        fill="#000000">
+                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                            <path style="fill:#FFFEF9"
+                                                d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+                                                id="linkedin-[#161]"> </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <p id="email">jitskebente@vinlien.nl</p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

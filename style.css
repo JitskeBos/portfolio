@@ -1,0 +1,704 @@
+:root {
+    --padding-left: 1em;
+
+    --weight-light: 300;
+    --weight-medium: 400;
+    --weight-bold: 650;
+
+    --groen: #739072;
+    --wit: #FFFEF9;
+    --grijs: rgb(180, 178, 178);
+}
+
+body {
+    margin: 0;
+    background-color: var(--wit);
+}
+
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin-top: 5em;
+    width: 80em;
+    align-self: center;
+    border: .75px solid var(--grijs);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 30em;
+    font-family: 'Inter';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.signature {
+    background-color: var(--groen);
+}
+
+.signature img {
+    height: 2.5em;
+    margin: .5em;
+    margin-left: 1.5em;
+}
+
+.linkjes {
+    display: flex;
+    list-style-type: none;
+    grid-column-start: 2;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--wit);
+}
+
+.linkjes a{
+    margin-left: -5em;
+    margin-right: -5em;
+    margin: 1em;
+}
+
+.headerHome {
+    display: flex;
+    align-items: center;
+    height: 740px;
+    background-color: var(--groen);
+    justify-content: flex-end;
+    margin-top: 3.2em;
+}
+
+.introductie {
+    color: var(--wit);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.introductie h1 {
+    font-size: 3em;
+}
+
+.introductie h3 {
+    font-family: 'Inter';
+    font-weight: var(--weight-light);
+}
+
+.introductie svg {
+    height: 4em;
+    width: fit-content;
+}
+
+.rightSide {
+    background-color: var(--wit);
+    height: 740px;
+    width: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profpic {
+    background-image: url(./images/propeduese.jpeg);
+    background-size: cover;
+    background-position: -5em;
+    height: 20em;
+    width: 20em;
+    border-radius: 100%;
+}
+
+/* reisApp */
+.reisApp,
+.monopoly,
+.reading {
+    margin-top: 4em;
+}
+
+.reisApp h2,
+.monopoly h2,
+.reading h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.reisApp h4,
+p,
+.monopoly h4,
+.reading h4 {
+    font-family: 'Inter';
+}
+
+.reisApp svg,
+.monopoly svg,
+.reading svg {
+    transform: rotate(270deg);
+    height: 2.5em;
+    width: fit-content;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    line-height: 1.5;
+}
+
+.text :first-child p {
+    font-weight: var(--weight-light);
+    color: var(--grijs);
+}
+
+.textBlok,
+.textBlok h4 {
+    max-width: 31em;
+    font-weight: var(--weight-light);
+    margin-top: 1.5em;
+}
+
+.textBlok h4 {
+    font-size: 1.25em;
+}
+
+.zieMeer {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-weight: var(--weight-bold);
+    font-size: 1.25em;
+    margin-top: -1em;
+    transition: 0.4s;
+}
+
+.zieMeer:hover {
+    color: var(--grijs);
+    transition: 0.4s;
+    gap: 1.5em;
+}
+
+.reisAppImg,
+.monopolyImg,
+.readingImg {
+    display: flex;
+    height: 30em;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.reisAppImg,
+.readingImg {
+    gap: 3em;
+}
+
+.monopolyImg {
+    position: relative;
+    align-items: center;
+    margin-left: -5em;
+}
+
+.reisAppImg img,
+.monopolyImg img,
+.readingImg img {
+    filter: drop-shadow(3px 5px 5px #969696);
+}
+
+.laptopMono {
+    height: 30em;
+}
+
+#mobileMono {
+    height: 25em;
+    margin-left: -10em;
+    margin-top: 10em;
+}
+
+.monopoly hr {
+    margin-top: 7em;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--groen);
+    color: var(--wit);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-top: 10em;
+}
+
+footer img {
+    height: 7em;
+}
+
+.footerText {
+    display: flex;
+    justify-content: center;
+    gap: 30em;
+    font-weight: var(--weight-medium);
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.contactImg {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: flex-end;
+    height: fit-content;
+}
+
+.contactImg svg {
+    height: 1.8em;
+}
+
+footer div:first-of-type {
+    max-width: 25em;
+    line-height: 1.5;
+}
+
+footer div:last-of-type {
+    margin-top: 1em;
+}
+
+#email {
+    margin-top: 1.5em;
+}
+
+/* linkjes */
+
+#mail,
+#insta,
+#linkedIn,
+#email {
+    transition: 0.4s;
+    font-weight: var(--weight-light);
+}
+
+#mail:hover,
+#insta:hover,
+#linkedIn:hover,
+#email:hover {
+    transition: 0.4s;
+    opacity: 0.5;
+}
+
+/* uitleg header */
+
+.headerCase {
+    background-color: var(--groen);
+    margin-top: 3.6em;
+    color: var(--wit);
+    padding-bottom: 6em;
+}
+
+.titelImg {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    gap: 10em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.titel h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.titel p {
+    font-weight: var(--weight-light);
+}
+
+.monopolyInfoImg,
+.reisAppInfoImg,
+.readingInfoImg {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+}
+
+.reisAppInfoImg,
+.readingInfoImg {
+    height: 25em;
+    gap: 1em;
+}
+
+.laptopMono {
+    height: 25em;
+}
+
+.mobileMono {
+    height: 20em;
+    margin-left: -10em;
+    margin-top: 7em;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    height: 17em;
+    gap: 15em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.info h3 {
+    font-family: 'Inter';
+    font-weight: var(--weight-light);
+    line-height: 1.5;
+    width: 25em;
+    font-size: 1.25em;
+}
+
+.rijtje {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    max-width: 30em;
+    height: 25em;
+}
+
+.rijtje h4 {
+    margin: 0;
+    margin-top: 2em;
+    font-family: 'Inter';
+    font-weight: var(--weight-light);
+    font-size: .9em;
+}
+
+.rijtje p {
+    margin: 0;
+    margin-top: 1em;
+
+}
+
+
+/* uitleg */
+
+.details h2,
+.userJourney h2,
+.userScenario h2,
+.drieC h2,
+.userReq h2,
+.proReq h2,
+.wireframe h2,
+.flowchart h2,
+.schermen h2,
+.wireflow h2,
+.schets h2,
+.skills h2,
+.hobby h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.8em;
+    margin-top: 2em;
+}
+
+.detailLetter,
+.detailLetterII,
+.drieUitleg,
+.contentOp {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.detailLetter h3,
+.detailLetterII h3,
+.fases h3,
+.drieUitleg h3,
+.contentOp h3,
+.proReq h3,
+.userJourney th {
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-weight: var(--weight-light);
+    color: var(--groen);
+}
+
+.detailLetter p,
+.detailLetterII p,
+.drieUitleg p,
+.contentOp p,
+.schermen p {
+    font-size: 1.1em;
+    font-weight: var(--weight-medium);
+    line-height: 1.5;
+}
+
+.detailLetter p {
+    width: 8.5em;
+}
+
+.detailLetterII p {
+    width: 11em;
+}
+
+.userJourney p,
+.userReq p,
+.schermen p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.userJourney img,
+.userReq img,
+.flowchart img,
+.wireflow img,
+.headerSelf img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
+
+.fases,
+.proReqLijst {
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fases p,
+.proReq li {
+    font-size: 1.1em;
+    font-weight: var(--weight-medium);
+    line-height: 1.5;
+    font-family: 'Inter';
+}
+
+.proReqLi,
+.proReqLiII {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.proReqLijst li,
+.proReqLiII li {
+    margin-bottom: .5em;
+}
+
+.proReq li::marker,
+.proReqLiII li::marker {
+    color: var(--groen);
+}
+
+.proReqLiII li:nth-child(2),
+.proReqLiII li:nth-child(3) {
+    list-style-type: '→';
+}
+
+.drieUitleg p,
+.contentOp p {
+    width: 23em;
+}
+
+.contentOp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentOp section:nth-of-type(4) {
+    margin-left: 2em;
+}
+
+@media (min-width: 1200px) {
+    .contentOp section:nth-of-type(4) {
+        margin-top: -13em;
+        margin-left: 2em;
+    }
+}
+
+.rijkWireImg,
+.rijkWireImgII,
+.globeImg,
+.readingWireImg,
+.readingWireImgII {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    gap: 2em;
+}
+
+.rijkWireImg img,
+.readingWireImgII {
+    height: 20em;
+}
+
+.rijkWireImgII {
+    height: 25em;
+    margin-top: -2em;
+}
+
+.globeImg {
+    height: 25em;
+}
+
+.readingWireImg {
+    overflow: auto;
+    white-space: nowrap;
+    padding-left: 5em;
+}
+
+.readingWireImg img {
+    display: inline-block;
+    height: 27em;
+}
+
+.schetsImg {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+}
+
+.schets img {
+    height: auto;
+    width: 40em;
+}
+
+.schets img:nth-child(2) {
+    height: 40em;
+    width: auto;
+}
+
+.userJourney table {
+    font-family: 'Inter';
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+
+.userJourney table:nth-last-of-type(1) {
+    margin-top: 3em;
+}
+
+.userJourney td,
+.userJourney th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: .8em;
+}
+
+/* about me */
+
+.headerSelf {
+    background-color: var(--groen);
+    color: var(--wit);
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+.headerSelf h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+}
+
+.headerSelf p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: var(--weight-medium);
+    line-height: 1.5;
+}
+
+.headerSelf img {
+    height: 30em;
+    width: fit-content;
+    margin-top: 2em;
+}
+
+.skillLogo {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin-top: 5em
+}
+
+.skillLogo svg {
+    height: 8em;
+    padding: 2em;
+}
+
+.wit {
+    background-color: var(--groen);
+    height: 8em;
+    width: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.hide {
+    display: none;
+    text-align: center;
+}
+
+.svg:hover+.hide {
+    display: block;
+    color: black;
+    font-family: 'Inter';
+}
+
+.svg:hover {
+    display: none;
+}
+
+.kip {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kipII {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+}
+
+.wrapper {
+    width: 10em;
+}
+
+.wrapper p {
+    margin-left: 1em;
+}
+
+.progress-bar {
+    width: 20em;
+    background-color: #e0e0e0;
+
+    border-radius: 3px;
+}
+
+.progress-bar-fill {
+    display: block;
+    height: 1em;
+    background-color: var(--groen);
+    border-radius: 3px;
+}
+
+.leuk   {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
