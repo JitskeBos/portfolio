@@ -82,6 +82,9 @@ nav {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-right: 20em;
+    margin-left: 5em;
+    width: fit-content;
 }
 
 .introductie h1 {
