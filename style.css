@@ -36,7 +36,7 @@ hr {
 nav {
     display: grid;
     grid-template-columns: 1fr 30em;
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     position: fixed;
     top: 0;
     width: 100%;
@@ -62,7 +62,7 @@ nav {
     background-color: var(--wit);
 }
 
-.linkjes a{
+.linkjes a {
     margin-left: -5em;
     margin-right: -5em;
     margin: 1em;
@@ -89,10 +89,11 @@ nav {
 
 .introductie h1 {
     font-size: 3em;
+    font-family: 'Playfair Display';
 }
 
 .introductie h3 {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-weight: var(--weight-light);
 }
 
@@ -111,9 +112,9 @@ nav {
 }
 
 .profpic {
-    background-image: url(./images/propeduese.jpeg);
+    background-image: url(./images/profiel.JPG);
     background-size: cover;
-    background-position: -5em;
+
     height: 20em;
     width: 20em;
     border-radius: 100%;
@@ -122,27 +123,32 @@ nav {
 /* reisApp */
 .reisApp,
 .monopoly,
-.reading {
+.reading,
+.efm {
     margin-top: 4em;
 }
 
 .reisApp h2,
 .monopoly h2,
-.reading h2 {
+.reading h2,
+.efm h2 {
     font-size: 3em;
     margin-bottom: 20px;
+    font-family: 'Playfair Display';
 }
 
 .reisApp h4,
 p,
 .monopoly h4,
-.reading h4 {
-    font-family: 'Inter';
+.reading h4,
+.efm h4 {
+    font-family: 'Montserrat';
 }
 
 .reisApp svg,
 .monopoly svg,
-.reading svg {
+.reading svg,
+.efm svg {
     transform: rotate(270deg);
     height: 2.5em;
     width: fit-content;
@@ -192,6 +198,13 @@ p,
 .readingImg {
     display: flex;
     height: 30em;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.efmImg {
+    display: flex;
+    height: 20em;
     justify-content: center;
     margin-top: 3em;
 }
@@ -314,6 +327,7 @@ footer div:last-of-type {
 .titel h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    font-family: 'Playfair Display';
 }
 
 .titel p {
@@ -322,7 +336,8 @@ footer div:last-of-type {
 
 .monopolyInfoImg,
 .reisAppInfoImg,
-.readingInfoImg {
+.readingInfoImg,
+.efmInfoImg {
     display: flex;
     justify-content: flex-end;
     margin-top: 2em;
@@ -331,6 +346,11 @@ footer div:last-of-type {
 .reisAppInfoImg,
 .readingInfoImg {
     height: 25em;
+    gap: 1em;
+}
+
+.efmInfoImg {
+    height: 15em;
     gap: 1em;
 }
 
@@ -355,7 +375,7 @@ footer div:last-of-type {
 }
 
 .info h3 {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-weight: var(--weight-light);
     line-height: 1.5;
     width: 25em;
@@ -373,7 +393,7 @@ footer div:last-of-type {
 .rijtje h4 {
     margin: 0;
     margin-top: 2em;
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-weight: var(--weight-light);
     font-size: .9em;
 }
@@ -404,6 +424,7 @@ footer div:last-of-type {
     justify-content: center;
     font-size: 2.8em;
     margin-top: 2em;
+    font-family: 'Playfair Display';
 }
 
 .detailLetter,
@@ -423,7 +444,7 @@ footer div:last-of-type {
 .proReq h3,
 .userJourney th {
     text-transform: uppercase;
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-weight: var(--weight-light);
     color: var(--groen);
 }
@@ -479,7 +500,7 @@ footer div:last-of-type {
     font-size: 1.1em;
     font-weight: var(--weight-medium);
     line-height: 1.5;
-    font-family: 'Inter';
+    font-family: 'Montserrat';
 }
 
 .proReqLi,
@@ -529,7 +550,8 @@ footer div:last-of-type {
 .rijkWireImgII,
 .globeImg,
 .readingWireImg,
-.readingWireImgII {
+.readingWireImgII,
+.efmImgUitleg img {
     display: flex;
     justify-content: center;
     margin-top: 3em;
@@ -548,6 +570,18 @@ footer div:last-of-type {
 
 .globeImg {
     height: 25em;
+}
+
+.efmImgUitleg {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5em;
+}
+
+.efmImgUitleg img {
+    height: 100%;
+    width: 40%;
 }
 
 .readingWireImg {
@@ -579,7 +613,7 @@ footer div:last-of-type {
 }
 
 .userJourney table {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     border-collapse: collapse;
     display: flex;
     justify-content: center;
@@ -610,6 +644,7 @@ footer div:last-of-type {
     justify-content: center;
     text-align: center;
     font-size: 3em;
+    font-family: 'Playfair Display';
 }
 
 .headerSelf p {
@@ -657,7 +692,7 @@ footer div:last-of-type {
 .svg:hover+.hide {
     display: block;
     color: black;
-    font-family: 'Inter';
+    font-family: 'Montserrat';
 }
 
 .svg:hover {
@@ -700,7 +735,7 @@ footer div:last-of-type {
     border-radius: 3px;
 }
 
-.leuk   {
+.leuk {
     display: flex;
     align-items: center;
     gap: 1em;
